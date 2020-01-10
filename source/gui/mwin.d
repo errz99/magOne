@@ -11,13 +11,11 @@ class MainWin : MainWindow {
 
 	this() {
 		super("MagOne");
-		//addOnDestroy(delegate void(Widget w) { quitApp(); });
-		
 		addOnDestroy(delegate void(Widget w) {
 			Main.quit();
 			writeln("Adios");
 		});
-		
+
 		setDefaultSize(600, 400);
 
 		auto button = new CallButton(this);
@@ -25,11 +23,6 @@ class MainWin : MainWindow {
 
 		showAll();
 	}
-
-	//void quitApp() {		
-	//	Main.quit();
-	//	writeln("Bye, bye.");
-	//}
 }
 
 class CallButton : Button {
@@ -41,16 +34,16 @@ class CallButton : Button {
 	void showDialog(MainWindow w) {
 		writeln("Ahora aparece el Dialog");
 		//anto entryDial = new EntryDialog("My Dialog", w);
-		//auto twoLabelsDial = new TwoLabelsDial("Mi titulo", "Texto Uno", "Texto Dos", w);		
+		//auto twoLabelsDial = new TwoLabelsDial("Mi titulo", "Texto Uno", "Texto Dos", w);
 		//auto resp = twoLabelsDial.run();
-		
+
 		//auto testDial = new TestDialog(w);
 		//auto resp = testDial.run();
-		
+
 		auto resp = DialogEntry("Titulo", "Cabeza", "Etiqueta", "Previo", true, w);
-		
-		if (resp.num == -5) {				
+
+		if (resp.num == -5) {
 			writeln("Ok pressed: ", resp);
-		}	
+		}
 	}
 }
