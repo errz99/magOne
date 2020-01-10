@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/magone
+magone.so
+magone.dylib
+magone.dll
+magone.a
+magone.lib
+magone-test-*
+*.exe
+*.o
+*.obj
+*.lst
