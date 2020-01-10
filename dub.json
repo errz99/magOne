@@ -1,0 +1,11 @@
+{
+	"authors": [
+		"bdaemon"
+	],
+	"dependencies": {
+		"gtk-d": "~>3.9.0"
+	},
+	"description": "First GtkD try.",
+	"license": "proprietary",
+	"name": "magone"
+}
